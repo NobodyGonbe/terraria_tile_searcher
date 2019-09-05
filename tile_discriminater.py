@@ -90,7 +90,7 @@ class RgbInputFrame():
         self.txt = StringVar()
         self.txt.set('')
 
-        self.description = Label(master, text = '好きな色を選択してserchを押してください')
+        self.description = Label(master, text = '好きな色を選択してsearchを押してください')
         self.description.pack()
         self.description.place(x = 30, y = 10)
 
