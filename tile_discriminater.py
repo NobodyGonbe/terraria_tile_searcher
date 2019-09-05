@@ -5,10 +5,11 @@ from tkinter import *
 
 
 # ペイント後の色計算式、テラリアより抜粋し,python用に調整したもの
-def after_paint_color(basecolor, paintcolor, wall):
-    red = basecolor[0] / 255
-    green = basecolor[1] / 255
-    blue = basecolor[2] / 255
+# base_color(タイル + 壁の色リスト) paint_color(ペンキの色リスト) painted(着色されたタイルと壁)
+def painted_color(base_color, paint_color, wall):
+    red = base_color[0] / 255
+    green = base_color[1] / 255
+    blue = base_color[2] / 255
 
     if green > red:
         red = green
@@ -16,64 +17,77 @@ def after_paint_color(basecolor, paintcolor, wall):
         num = red
         red = blue
         blue = num
+
     # Shadow
-    if(paintcolor[0] == 25 and paintcolor[1] == 25 and paintcolor[2] == 25):
+    if(paint_color[0] == 25 and paint_color[1] == 25 and paint_color[2] == 25):
         shadow = blue * 0.3
-        after_paint_red = int(paintcolor[0] * shadow)
-        after_paint_green = int(paintcolor[1]* shadow)
-        after_paint_blue = int(paintcolor[2] * shadow)
+        painted_red = int(paint_color[0] * shadow)
+        painted_green = int(paint_color[1]* shadow)
+        painted_blue = int(paint_color[2] * shadow)
     # Negative
-    if (paintcolor[0] == 200 and paintcolor[1] == 200 and paintcolor[2] == 200):
-        # basecolor側の回転数がwall_startよりも多い場合は壁
+    if (paint_color[0] == 200 and paint_color[1] == 200 and paint_color[2] == 200):
         if  wall:
-            after_paint_red = int((255 - basecolor[0]) * 0.5)
-            after_paint_green = int((255 - basecolor[1]) * 0.5)
-            after_paint_blue = int((255 - basecolor[2]) * 0.5)
+            painted_red = int((255 - base_color[0]) * 0.5)
+            painted_green = int((255 - base_color[1]) * 0.5)
+            painted_blue = int((255 - base_color[2]) * 0.5)
         else:
-            after_paint_red = int(255 - basecolor[0])
-            after_paint_green = int(255 - basecolor[1])
-            after_paint_blue = int(255 - basecolor[2])
+            painted_red = int(255 - base_color[0])
+            painted_green = int(255 - base_color[1])
+            painted_blue = int(255 - base_color[2])
     else:
         new_brightness = red
-        after_paint_red = int(paintcolor[0] * new_brightness)
-        after_paint_green = int(paintcolor[1] * new_brightness)
-        after_paint_blue = int(paintcolor[2] * new_brightness)
+        painted_red = int(paint_color[0] * new_brightness)
+        painted_green = int(paint_color[1] * new_brightness)
+        painted_blue = int(paint_color[2] * new_brightness)
 
-    return [after_paint_red, after_paint_green, after_paint_blue]
+    return [painted_red, painted_green, painted_blue]
 
-# rgbを差し引いて絶対値判断して近い色のタイル名を返す
-def tile_discrimination(r, g, b):
+
+# rgbの差分を判断して近い色のタイル名を返す
+def select_tile_combination(r, g, b):
+
+    # 差分のスコアが一番小さいもののインデックスを作成
     input_color = [r, g, b]
+    score = [(abs(color[0] - input_color[0]) + abs(color[1] - input_color[1]) + abs(color[2] - input_color[2]))
+             for color in map_color_list]
+    min_score = min(score)
+    min_score_index = [i for i, v in enumerate(score) if v == min_score]
 
-    difference_score = [(abs(color[0] - input_color[0]) + abs(color[1] - input_color[1]) + abs(color[2] - input_color[2]))
-         for color in all_color_list]
-    # 最小スコアのインデックスがリストで表示される
-    min_value = min(difference_score)
-    near_value_index = [i for i, v in enumerate(difference_score) if v == min_value]
-
-    return_tile = ''
-    #　表示部分　リスト形式はtile + wall + tile(paint1) + wall(paint1) + tile(paint2)...
-    for i in near_value_index:
-        if i >= after_paint_start:
-            paint_name = paint_list[int(i / after_paint_start) - 1]['name']
-            reminder = i % after_paint_start
-            if reminder >= wall_start:
-                base_name = wall_list[reminder - wall_start]['name']
-                return_tile += '(wall){} + {}Paint\n'.format(base_name, paint_name)
-            else:
-                base_name = tile_list[reminder]['name']
-                return_tile += '(tile){} + {}Paint\n'.format(base_name, paint_name)
-        elif i < wall_start:
-            return_tile += '(tile){}\n'.format(tile_list[i]['name'])
+    # インデックスよりタイルの名前判別　リスト形式はtile + wall + tile(paint1) + wall(paint1) + tile(paint2)...
+    name = []
+    for i in min_score_index:
+        if i >= paint_start:
+            paint_name = '+{}Paint'.format(paint_dictionary[int(i / paint_start) - 1]['name'])
         else:
-            return_tile += '(wall){}\n'.format(wall_list[i - wall_start]['name'])
+            paint_name = ''
 
-    return return_tile
+        target_index = i % paint_start
+        target_item = base_color_dictionary[target_index]['name']
+        if target_index >= wall_start:
+            tile_type = 'wall'
+        else:
+            tile_type = 'tile'
+
+        name += ['({}){}{}\n'.format(tile_type, target_item, paint_name)]
+
+    # 検索上位5件を表示
+    return_name = ''
+    for i in range(len(name)):
+        if i < 5:
+            return_name += name[i]
+        else:
+            break
+
+    return return_name
 
 class RgbInputFrame():
     def __init__(self, master):
         frame = Frame(master)
         frame.pack()
+
+        self.txt = StringVar()
+        self.txt.set('値を入力してください')
+
         self.description = Label(master, text = 'RGBを入力するとマップカラーで近い色のタイルを返します。')
         self.description.pack()
         self.description.place(x = 30, y = 10)
@@ -89,41 +103,39 @@ class RgbInputFrame():
         self.b = Entry(master, width = 5)
         self.b.pack()
         self.b.place(x = 230, y = 60)
-        self.button = Button(master, text = 'Search', command = self.send_command)
+        self.button = Button(master, text = 'Search', command = self.change_label)
         self.button.pack()
         self.button.place(x = 150, y = 100)
-
-    def send_command(self):
-        r = int(self.r.get())
-        g = int(self.g.get())
-        b = int(self.b.get())
-        self.label2 = Label(root, text = tile_discrimination(r, g, b), justify='left')
+        self.label2 = Label(master, textvariable  = self.txt, justify='left')
         self.label2.pack()
         self.label2.place(x = 50, y = 150)
 
-import_json = json.load(open('MapColor.json'))
+    def send_message(self):
+        r = int(self.r.get())
+        g = int(self.g.get())
+        b = int(self.b.get())
+        return select_tile_combination(r, g, b)
 
-# jsonをtilesとwallsとPaintsに分割
-tile_list = import_json['Tiles']
-wall_list = import_json['Walls']
-wall_start = len(tile_list)
-paint_list = import_json['Paints']
-sum_list = tile_list + wall_list
-
-# 絶対値の比較用リスト
-basecolor_list = [[int(color) for color in item['color'].split(',')] for item in sum_list]
-paint_base_list = [[int(color) for color in paint['color'].split(',')] for paint in paint_list]
-after_paint_list = [after_paint_color(basecolor_list[i], paint_base_list[j], i >= wall_start)
-                    for j in range(len(paint_base_list))
-                    for i in range(len(basecolor_list))]
-after_paint_start = len(sum_list)
-all_color_list = basecolor_list + after_paint_list
-print(len(after_paint_list))
+    def change_label(self):
+        self.txt.set(self.send_message())
 
 
-root = Tk()
-root.title('Terraria Tile Discriminater')
-root.geometry('350x500')
-root.resizable(0, 1)
-RgbInputFrame(root)
-root.mainloop()
+data = json.load(open('MapColor.json'))
+paint_dictionary = data['Paints']
+base_color_dictionary = data['Tiles'] + data['Walls']
+wall_start = len(data['Tiles'])
+paint_start = len(base_color_dictionary)
+base_color_list = [[int(color) for color in item['color'].split(',')] for item in base_color_dictionary]
+paint_color_list = [[int(color) for color in paint['color'].split(',')] for paint in paint_dictionary]
+painted_list = [painted_color(base_color_list[i], paint_color_list[j], i >= wall_start)
+                    for j in range(len(paint_color_list))
+                    for i in range(len(base_color_list))]
+map_color_list = base_color_list + painted_list
+
+
+if __name__ == '__main__':
+    root = Tk()
+    root.title('Terraria Tile Discriminater')
+    root.geometry('350x250')
+    RgbInputFrame(root)
+    root.mainloop()
