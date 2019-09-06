@@ -44,45 +44,35 @@ def painted_color(base_color, paint_color, wall):
     return [painted_red, painted_green, painted_blue]
 
 
- # 差分のスコアが一番小さいもののインデックスを作成
+ # 差分のスコアが小さいタイル5件を作成
 def return_min_scores(r, g, b, target_color_list):
     input_color = [r, g, b]
-    scores = [(abs(color[0] - input_color[0]) + abs(color[1] - input_color[1]) + abs(color[2] - input_color[2]))
-                 for color in target_color_list]
-    min_scores = min(scores)
-    min_scores_index = [i for i, v in enumerate(scores) if v == min_scores]
+    scores = [((abs(color[0] - input_color[0]) + abs(color[1] - input_color[1]) + abs(color[2] - input_color[2])), i) for i,
+              color in enumerate(target_color_list)]
+    min_scores_index = sorted(scores)[:5]
     return min_scores_index
 
 
-# return_min_scoresのインデックスよりタイルの名前判別して返す
+# return_min_scoresのインデックスより名前を判別して返す
 # リスト形式はtile + wall + tile(paint1) + wall(paint1) + tile(paint2)...
 def select_tile_combination(r, g, b, target_color_list):
-    names = []
+    names = ''
     num = return_min_scores(r, g, b, target_color_list)
     for i in num:
-        if i >= paint_start:
-            paint_name = '+{}Paint'.format(paint_dictionary[int(i / paint_start) - 1]['name'])
+        if i[1] >= paint_start:
+            paint_name = '+{}Paint'.format(paint_dictionary[int(i[1] / paint_start) - 1]['name'])
         else:
             paint_name = ''
 
-        target_index = i % paint_start
+        target_index = i[1] % paint_start
         target_item = base_dictionary[target_index]['name']
         if target_index >= wall_start:
             tile_type = 'wall'
         else:
             tile_type = 'tile'
 
-        names += ['({}){}{}\n\n'.format(tile_type, target_item, paint_name)]
-
-    # 検索上位5件を表示
-    return_names = ''
-    for i in range(len(names)):
-        if i < 5:
-            return_names += names[i]
-        else:
-            break
-
-    return return_names
+        names += '({}){}{}\n\n'.format(tile_type, target_item, paint_name)
+    return names
 
 class RgbInputFrame():
     def __init__(self, master):
@@ -180,20 +170,16 @@ class RgbInputFrame():
 
     def send_color(self):
         index = return_min_scores(self.get_rgb()[0], self.get_rgb()[1], self.get_rgb()[2], self.use_paint())
-        color1 = self.rgb_to_html_color(map_colors[index[0]][0], map_colors[index[0]][1], map_colors[index[0]][2])
+        color1 = self.rgb_to_html_color(map_colors[index[0][1]][0], map_colors[index[0][1]][1], map_colors[index[0][1]][2])
         self.cvs1.create_rectangle(0, 0, 20, 20, fill = color1)
-        if  len(index) > 1 :
-            color2 = self.rgb_to_html_color(map_colors[index[1]][0], map_colors[index[1]][1], map_colors[index[1]][2])
-            self.cvs2.create_rectangle(0, 0, 20, 20, fill = color2)
-        if len(index) > 2:
-            color3 = self.rgb_to_html_color(map_colors[index[2]][0], map_colors[index[2]][1], map_colors[index[2]][2])
-            self.cvs3.create_rectangle(0, 0, 20, 20, fill = color3)
-        if len(index) > 3:
-            color4 = self.rgb_to_html_color(map_colors[index[3]][0], map_colors[index[3]][1], map_colors[index[3]][2])
-            self.cvs4.create_rectangle(0, 0, 20, 20, fill = color4)
-        if len(index) > 4:
-            color5 = self.rgb_to_html_color(map_colors[index[4]][0], map_colors[index[4]][1], map_colors[index[4]][2])
-            self.cvs5.create_rectangle(0, 0, 20, 20, fill = color5)
+        color2 = self.rgb_to_html_color(map_colors[index[1][1]][0], map_colors[index[1][1]][1], map_colors[index[1][1]][2])
+        self.cvs2.create_rectangle(0, 0, 20, 20, fill = color2)
+        color3 = self.rgb_to_html_color(map_colors[index[2][1]][0], map_colors[index[2][1]][1], map_colors[index[2][1]][2])
+        self.cvs3.create_rectangle(0, 0, 20, 20, fill = color3)
+        color4 = self.rgb_to_html_color(map_colors[index[3][1]][0], map_colors[index[3][1]][1], map_colors[index[3][1]][2])
+        self.cvs4.create_rectangle(0, 0, 20, 20, fill = color4)
+        color5 = self.rgb_to_html_color(map_colors[index[4][1]][0], map_colors[index[4][1]][1], map_colors[index[4][1]][2])
+        self.cvs5.create_rectangle(0, 0, 20, 20, fill = color5)
 
     def change_label(self):
         self.cvs1.delete('all')
