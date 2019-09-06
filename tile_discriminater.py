@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 
 import json
@@ -44,19 +45,20 @@ def painted_color(base_color, paint_color, wall):
 
 
  # 差分のスコアが一番小さいもののインデックスを作成
-def return_min_scores(r, g, b):
+def return_min_scores(r, g, b, target_color_list):
     input_color = [r, g, b]
     scores = [(abs(color[0] - input_color[0]) + abs(color[1] - input_color[1]) + abs(color[2] - input_color[2]))
-             for color in map_colors]
+                 for color in target_color_list]
     min_scores = min(scores)
     min_scores_index = [i for i, v in enumerate(scores) if v == min_scores]
     return min_scores_index
 
 
-# インデックスよりタイルの名前判別　リスト形式はtile + wall + tile(paint1) + wall(paint1) + tile(paint2)...
-def select_tile_combination(r, g, b):
+# return_min_scoresのインデックスよりタイルの名前判別して返す
+# リスト形式はtile + wall + tile(paint1) + wall(paint1) + tile(paint2)...
+def select_tile_combination(r, g, b, target_color_list):
     names = []
-    num = return_min_scores(r, g, b)
+    num = return_min_scores(r, g, b, target_color_list)
     for i in num:
         if i >= paint_start:
             paint_name = '+{}Paint'.format(paint_dictionary[int(i / paint_start) - 1]['name'])
@@ -89,8 +91,10 @@ class RgbInputFrame():
 
         self.txt = StringVar()
         self.txt.set('')
+        self.bool1 = BooleanVar()
+        self.bool1.set(True)
 
-        self.description = Label(master, text = '好きな色を選択してsearchを押してください')
+        self.description = Label(master, text = '検索したい色を選択してsearchボタンを押してください')
         self.description.pack()
         self.description.place(x = 30, y = 10)
 
@@ -119,27 +123,31 @@ class RgbInputFrame():
         self.cvs.place(x = 30, y = 50)
         self.cvs1 = Canvas(master, width = 10, height = 10)
         self.cvs1.pack()
-        self.cvs1.place(x = 30, y = 225)
+        self.cvs1.place(x = 30, y = 245)
         self.cvs2 = Canvas(master, width = 10, height = 10)
         self.cvs2.pack()
-        self.cvs2.place(x = 30, y = 255)
+        self.cvs2.place(x = 30, y = 275)
         self.cvs3 = Canvas(master, width = 10, height = 10)
         self.cvs3.pack()
-        self.cvs3.place(x = 30, y = 285)
+        self.cvs3.place(x = 30, y = 305)
         self.cvs4 = Canvas(master, width = 10, height = 10)
         self.cvs4.pack()
-        self.cvs4.place(x = 30, y = 315)
+        self.cvs4.place(x = 30, y = 335)
         self.cvs5 = Canvas(master, width = 10, height = 10)
         self.cvs5.pack()
-        self.cvs5.place(x = 30, y = 345)
+        self.cvs5.place(x = 30, y = 365)
+
+        self.CheckBox = Checkbutton(master, text = 'Paintを使用する',  variable = self.bool1)
+        self.CheckBox.pack()
+        self.CheckBox.place(x = 30, y = 160)
 
         self.button = Button(master, text = 'Search', command = self.change_label)
         self.button.pack()
-        self.button.place(x = 150, y = 180)
+        self.button.place(x = 150, y = 195)
 
         self.label4 = Label(master, textvariable = self.txt, justify = 'left')
         self.label4.pack()
-        self.label4.place(x = 45, y = 220)
+        self.label4.place(x = 45, y = 240)
 
     def hexadecimal(self, rgb):
         num = hex(rgb).replace('0x', '')
@@ -151,45 +159,53 @@ class RgbInputFrame():
         color = '#' + '{}{}{}'.format(self.hexadecimal(r), self.hexadecimal(g), self.hexadecimal(b))
         return color
 
-
-    def scrl_method(self, event):
+    def get_rgb(self):
         r = self.scrl1.get()
         g = self.scrl2.get()
         b = self.scrl3.get()
-        html_color = self.rgb_to_html_color(r, g, b)
+        return [r, g, b]
+
+    def use_paint(self):
+        if self.bool1.get():
+            return map_colors
+        else:
+            return base_colors
+
+    def scrl_method(self, event):
+        html_color = self.rgb_to_html_color(self.get_rgb()[0], self.get_rgb()[1], self.get_rgb()[2])
         self.cvs.configure(bg = html_color)
 
     def send_message(self):
-        r = self.scrl1.get()
-        g = self.scrl2.get()
-        b = self.scrl3.get()
-        return select_tile_combination(r, g, b)
+        return select_tile_combination(self.get_rgb()[0], self.get_rgb()[1],  self.get_rgb()[2], self.use_paint())
 
     def send_color(self):
-        r = self.scrl1.get()
-        g = self.scrl2.get()
-        b = self.scrl3.get()
-        index = return_min_scores(r, g, b)
+        index = return_min_scores(self.get_rgb()[0], self.get_rgb()[1], self.get_rgb()[2], self.use_paint())
         color1 = self.rgb_to_html_color(map_colors[index[0]][0], map_colors[index[0]][1], map_colors[index[0]][2])
-        self.cvs1.configure(bg = color1)
+        self.cvs1.create_rectangle(0, 0, 20, 20, fill = color1)
         if  len(index) > 1 :
             color2 = self.rgb_to_html_color(map_colors[index[1]][0], map_colors[index[1]][1], map_colors[index[1]][2])
-            self.cvs2.configure(bg = color2)
+            self.cvs2.create_rectangle(0, 0, 20, 20, fill = color2)
         if len(index) > 2:
             color3 = self.rgb_to_html_color(map_colors[index[2]][0], map_colors[index[2]][1], map_colors[index[2]][2])
-            self.cvs3.configure(bg = color3)
+            self.cvs3.create_rectangle(0, 0, 20, 20, fill = color3)
         if len(index) > 3:
             color4 = self.rgb_to_html_color(map_colors[index[3]][0], map_colors[index[3]][1], map_colors[index[3]][2])
-            self.cvs4.configure(bg = color4)
+            self.cvs4.create_rectangle(0, 0, 20, 20, fill = color4)
         if len(index) > 4:
             color5 = self.rgb_to_html_color(map_colors[index[4]][0], map_colors[index[4]][1], map_colors[index[4]][2])
-            self.cvs5.configure(bg = color5)
+            self.cvs5.create_rectangle(0, 0, 20, 20, fill = color5)
 
     def change_label(self):
+        self.cvs1.delete('all')
+        self.cvs2.delete('all')
+        self.cvs3.delete('all')
+        self.cvs4.delete('all')
+        self.cvs5.delete('all')
         self.txt.set(self.send_message())
         self.send_color()
 
 
+#検索に使用するリスト
 data = json.load(open('MapColor.json'))
 paint_dictionary = data['Paints']
 base_dictionary = data['Tiles'] + data['Walls']
@@ -204,7 +220,7 @@ map_colors = base_colors + painted_colors
 
 if __name__ == '__main__':
     root = Tk()
-    root.title('Terraria Tile Discriminater')
-    root.geometry('340x400')
+    root.title('Terraria Tile Searcher')
+    root.geometry('340x430')
     RgbInputFrame(root)
     root.mainloop()

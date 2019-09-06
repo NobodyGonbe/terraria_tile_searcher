@@ -2,1710 +2,1365 @@
   "Tiles": [
     {
       "name": "Dirt",
-      "color": "151, 107, 75, 255",
-      "paintIgnore": false
+      "color": "151, 107, 75, 255"
     },
     {
       "name": "Stone",
-      "color": "128, 128, 128, 255",
-      "paintIgnore": false
+      "color": "128, 128, 128, 255"
     },
     {
       "name": "Plants",
-      "color": "26, 196, 84, 255",
-      "paintIgnore": false
+      "color": "26, 196, 84, 255"
     },
     {
       "name": "Torches",
-      "color": "253, 221, 3, 255",
-      "paintIgnore": false
+      "color": "253, 221, 3, 255"
     },
     {
       "name": "Trees",
-      "color": "151, 107, 75, 255",
-      "paintIgnore": false
+      "color": "151, 107, 75, 255"
     },
     {
       "name": "Iron",
-      "color": "140, 101, 80, 255",
-      "paintIgnore": false
+      "color": "140, 101, 80, 255"
     },
     {
       "name": "Copper",
-      "color": "150, 67, 22, 255",
-      "paintIgnore": false
+      "color": "150, 67, 22, 255"
     },
     {
       "name": "Gold",
-      "color": "185, 164, 23, 255",
-      "paintIgnore": false
+      "color": "185, 164, 23, 255"
     },
     {
       "name": "Silver",
-      "color": "185, 194, 195, 255",
-      "paintIgnore": false
+      "color": "185, 194, 195, 255"
     },
     {
       "name": "Platforms",
-      "color": "191, 142, 111, 255",
-      "paintIgnore": false
+      "color": "191, 142, 111, 255"
     },
     {
       "name": "Saplings",
-      "color": "163, 116, 81, 255",
-      "paintIgnore": false
+      "color": "163, 116, 81, 255"
     },
     {
       "name": "Demonite",
-      "color": "98, 95, 167, 255",
-      "paintIgnore": false
+      "color": "98, 95, 167, 255"
     },
     {
       "name": "Ebonstone",
-      "color": "109, 90, 128, 255",
-      "paintIgnore": false
+      "color": "109, 90, 128, 255"
     },
     {
       "name": "WoodBlock",
-      "color": "151, 107, 75, 255",
-      "paintIgnore": false
+      "color": "151, 107, 75, 255"
     },
     {
       "name": "Meteorite",
-      "color": "104, 86, 84, 255",
-      "paintIgnore": false
+      "color": "104, 86, 84, 255"
     },
     {
       "name": "GrayBrick",
-      "color": "128, 128, 128, 255",
-      "paintIgnore": false
+      "color": "128, 128, 128, 255"
     },
     {
       "name": "RedBrick",
-      "color": "181, 62, 59, 255",
-      "paintIgnore": false
+      "color": "181, 62, 59, 255"
     },
     {
       "name": "ClayBlock",
-      "color": "146, 81, 68, 255",
-      "paintIgnore": false
+      "color": "146, 81, 68, 255"
     },
     {
       "name": "BlueDungeonBrick",
-      "color": "66, 84, 109, 255",
-      "paintIgnore": false
+      "color": "66, 84, 109, 255"
     },
     {
       "name": "GreenDungeonBrick",
-      "color": "84, 100, 63, 255",
-      "paintIgnore": false
+      "color": "84, 100, 63, 255"
     },
     {
       "name": "PinkDungeonBrick",
-      "color": "107, 68, 99, 255",
-      "paintIgnore": false
+      "color": "107, 68, 99, 255"
     },
     {
       "name": "GoldBrick",
-      "color": "185, 164, 23, 255",
-      "paintIgnore": false
+      "color": "185, 164, 23, 255"
     },
     {
       "name": "SilverBrick",
-      "color": "185, 194, 195, 255",
-      "paintIgnore": false
+      "color": "185, 194, 195, 255"
     },
     {
       "name": "CopperBrick",
-      "color": "150, 67, 22, 255",
-      "paintIgnore": false
+      "color": "150, 67, 22, 255"
     },
     {
       "name": "Spikes",
-      "color": "128, 128, 128, 255",
-      "paintIgnore": false
+      "color": "128, 128, 128, 255"
     },
     {
       "name": "Sand",
-      "color": "186, 168, 84, 255",
-      "paintIgnore": false
+      "color": "186, 168, 84, 255"
     },
     {
       "name": "Glass",
-      "color": "200, 246, 254, 255",
-      "paintIgnore": false
+      "color": "200, 246, 254, 255"
     },
     {
       "name": "Obsidian",
-      "color": "43, 40, 84, 255",
-      "paintIgnore": false
+      "color": "43, 40, 84, 255"
     },
     {
       "name": "Ash",
-      "color": "68, 68, 76, 255",
-      "paintIgnore": false
+      "color": "68, 68, 76, 255"
     },
     {
       "name": "Hellstone",
-      "color": "142, 66, 66, 255",
-      "paintIgnore": false
+      "color": "142, 66, 66, 255"
     },
     {
       "name": "Mud",
-      "color": "92, 68, 73, 255",
-      "paintIgnore": false
+      "color": "92, 68, 73, 255"
     },
     {
       "name": "Sapphire",
-      "color": "110, 140, 182, 255",
-      "paintIgnore": false
+      "color": "110, 140, 182, 255"
     },
     {
       "name": "Ruby",
-      "color": "196, 96, 114, 255",
-      "paintIgnore": false
+      "color": "196, 96, 114, 255"
     },
     {
       "name": "Emerald",
-      "color": "56, 150, 97, 255",
-      "paintIgnore": false
+      "color": "56, 150, 97, 255"
     },
     {
       "name": "Topaz",
-      "color": "160, 118, 58, 255",
-      "paintIgnore": false
+      "color": "160, 118, 58, 255"
     },
     {
       "name": "Amethyst",
-      "color": "140, 58, 166, 255",
-      "paintIgnore": false
+      "color": "140, 58, 166, 255"
     },
     {
       "name": "Diamond",
-      "color": "125, 191, 197, 255",
-      "paintIgnore": false
+      "color": "125, 191, 197, 255"
     },
     {
       "name": "ObsidianBrick",
-      "color": "26, 26, 26, 255",
-      "paintIgnore": false
+      "color": "26, 26, 26, 255"
     },
     {
       "name": "HellstoneBrick",
-      "color": "142, 66, 66, 255",
-      "paintIgnore": false
+      "color": "142, 66, 66, 255"
     },
     {
       "name": "Cactus",
-      "color": "73, 120, 17, 255",
-      "paintIgnore": false
+      "color": "73, 120, 17, 255"
     },
     {
       "name": "Cobalt",
-      "color": "11, 80, 143, 255",
-      "paintIgnore": false
+      "color": "11, 80, 143, 255"
     },
     {
       "name": "Mythril",
-      "color": "91, 169, 169, 255",
-      "paintIgnore": false
+      "color": "91, 169, 169, 255"
     },
     {
       "name": "Adamantite",
-      "color": "128, 26, 52, 255",
-      "paintIgnore": false
+      "color": "128, 26, 52, 255"
     },
     {
       "name": "Ebonsand",
-      "color": "103, 98, 122, 255",
-      "paintIgnore": false
+      "color": "103, 98, 122, 255"
     },
     {
       "name": "Pearlsand",
-      "color": "238, 225, 218, 255",
-      "paintIgnore": false
+      "color": "238, 225, 218, 255"
     },
     {
       "name": "Pearlstone",
-      "color": "181, 172, 190, 255",
-      "paintIgnore": false
+      "color": "181, 172, 190, 255"
     },
     {
       "name": "PearlstoneBrick",
-      "color": "238, 225, 218, 255",
-      "paintIgnore": false
+      "color": "238, 225, 218, 255"
     },
     {
       "name": "IridescentBrick",
-      "color": "107, 92, 108, 255",
-      "paintIgnore": false
+      "color": "107, 92, 108, 255"
     },
     {
       "name": "Mudstone",
-      "color": "92, 68, 73, 255",
-      "paintIgnore": false
+      "color": "92, 68, 73, 255"
     },
     {
       "name": "CobaltBrick",
-      "color": "11, 80, 143, 255",
-      "paintIgnore": false
+      "color": "11, 80, 143, 255"
     },
     {
       "name": "MythrilBrick",
-      "color": "91, 169, 169, 255",
-      "paintIgnore": false
+      "color": "91, 169, 169, 255"
     },
     {
       "name": "Silt",
-      "color": "106, 107, 118, 255",
-      "paintIgnore": false
+      "color": "106, 107, 118, 255"
     },
     {
       "name": "WoodenBeam",
-      "color": "73, 51, 36, 255",
-      "paintIgnore": false
+      "color": "73, 51, 36, 255"
     },
     {
       "name": "ActiveStoneBlock",
-      "color": "128, 128, 128, 255",
-      "paintIgnore": false
+      "color": "128, 128, 128, 255"
     },
     {
       "name": "InactiveStoneBlock",
-      "color": "52, 52, 52, 255",
-      "paintIgnore": false
+      "color": "52, 52, 52, 255"
     },
     {
       "name": "DemoniteBrick",
-      "color": "98, 95, 167, 255",
-      "paintIgnore": false
+      "color": "98, 95, 167, 255"
     },
     {
       "name": "Timers",
-      "color": "144, 148, 144, 255",
-      "paintIgnore": false
+      "color": "144, 148, 144, 255"
     },
     {
       "name": "CandyCaneBlock",
-      "color": "192, 30, 30, 255",
-      "paintIgnore": false
+      "color": "192, 30, 30, 255"
     },
     {
       "name": "GreenCandyCaneBlock",
-      "color": "43, 192, 30, 255",
-      "paintIgnore": false
+      "color": "43, 192, 30, 255"
     },
     {
       "name": "SnowBlock",
-      "color": "211, 236, 241, 255",
-      "paintIgnore": false
+      "color": "211, 236, 241, 255"
     },
     {
       "name": "SnowBrick",
-      "color": "211, 236, 241, 255",
-      "paintIgnore": false
+      "color": "211, 236, 241, 255"
     },
     {
       "name": "AdamantiteBeam",
-      "color": "128, 26, 52, 255",
-      "paintIgnore": false
+      "color": "128, 26, 52, 255"
     },
     {
       "name": "SandstoneBrick",
-      "color": "190, 171, 94, 255",
-      "paintIgnore": false
+      "color": "190, 171, 94, 255"
     },
     {
       "name": "EbonstoneBrick",
-      "color": "128, 133, 184, 255",
-      "paintIgnore": false
+      "color": "128, 133, 184, 255"
     },
     {
       "name": "RedStucco",
-      "color": "239, 141, 126, 255",
-      "paintIgnore": false
+      "color": "239, 141, 126, 255"
     },
     {
       "name": "YellowStucco",
-      "color": "190, 171, 94, 255",
-      "paintIgnore": false
+      "color": "190, 171, 94, 255"
     },
     {
       "name": "GreenStucco",
-      "color": "131, 162, 161, 255",
-      "paintIgnore": false
+      "color": "131, 162, 161, 255"
     },
     {
       "name": "GrayStucco",
-      "color": "170, 171, 157, 255",
-      "paintIgnore": false
+      "color": "170, 171, 157, 255"
     },
     {
       "name": "Ebonwood",
-      "color": "104, 100, 126, 255",
-      "paintIgnore": false
+      "color": "104, 100, 126, 255"
     },
     {
       "name": "RichMahogany",
-      "color": "145, 81, 85, 255",
-      "paintIgnore": false
+      "color": "145, 81, 85, 255"
     },
     {
       "name": "Pearlwood",
-      "color": "148, 133, 98, 255",
-      "paintIgnore": false
-    },
-    {
-      "name": "RainbowBrick",
-      "color": "200, 0, 0, 255",
-      "paintIgnore": true
+      "color": "148, 133, 98, 255"
     },
     {
       "name": "IceBlock",
-      "color": "144, 195, 232, 255",
-      "paintIgnore": false
+      "color": "144, 195, 232, 255"
     },
     {
       "name": "CorruptIce",
-      "color": "174, 145, 214, 255",
-      "paintIgnore": false
+      "color": "174, 145, 214, 255"
     },
     {
       "name": "HallowedIce",
-      "color": "218, 182, 204, 255",
-      "paintIgnore": false
+      "color": "218, 182, 204, 255"
     },
     {
       "name": "Tin",
-      "color": "129, 125, 93, 255",
-      "paintIgnore": false
+      "color": "129, 125, 93, 255"
     },
     {
       "name": "Lead",
-      "color": "62, 82, 114, 255",
-      "paintIgnore": false
+      "color": "62, 82, 114, 255"
     },
     {
       "name": "Tungsten",
-      "color": "132, 157, 127, 255",
-      "paintIgnore": false
+      "color": "132, 157, 127, 255"
     },
     {
       "name": "Platinum",
-      "color": "152, 171, 198, 255",
-      "paintIgnore": false
+      "color": "152, 171, 198, 255"
     },
     {
       "name": "PineTree",
-      "color": "27, 109, 69, 255",
-      "paintIgnore": false
+      "color": "27, 109, 69, 255"
     },
     {
       "name": "TinBrick",
-      "color": "129, 125, 93, 255",
-      "paintIgnore": false
+      "color": "129, 125, 93, 255"
     },
     {
       "name": "TungstenBrick",
-      "color": "132, 157, 127, 255",
-      "paintIgnore": false
+      "color": "132, 157, 127, 255"
     },
     {
       "name": "PlatinumBrick",
-      "color": "152, 171, 198, 255",
-      "paintIgnore": false
+      "color": "152, 171, 198, 255"
     },
     {
       "name": "Cloud",
-      "color": "223, 255, 255, 255",
-      "paintIgnore": false
+      "color": "223, 255, 255, 255"
     },
     {
       "name": "MushroomBlock",
-      "color": "182, 175, 130, 255",
-      "paintIgnore": false
+      "color": "182, 175, 130, 255"
     },
     {
       "name": "LivingWood",
-      "color": "151, 107, 75, 255",
-      "paintIgnore": false
+      "color": "151, 107, 75, 255"
     },
     {
       "name": "LeafBlock",
-      "color": "26, 196, 84, 255",
-      "paintIgnore": false
+      "color": "26, 196, 84, 255"
     },
     {
       "name": "SlimeBlock",
-      "color": "56, 121, 255, 255",
-      "paintIgnore": false
+      "color": "56, 121, 255, 255"
     },
     {
       "name": "BoneBlock",
-      "color": "157, 157, 107, 255",
-      "paintIgnore": false
+      "color": "157, 157, 107, 255"
     },
     {
       "name": "FleshBlock",
-      "color": "134, 22, 34, 255",
-      "paintIgnore": false
+      "color": "134, 22, 34, 255"
     },
     {
       "name": "RainCloud",
-      "color": "147, 144, 178, 255",
-      "paintIgnore": false
+      "color": "147, 144, 178, 255"
     },
     {
       "name": "FrozenSlimeBlock",
-      "color": "97, 200, 225, 255",
-      "paintIgnore": false
+      "color": "97, 200, 225, 255"
     },
     {
       "name": "Asphalt",
-      "color": "62, 61, 52, 255",
-      "paintIgnore": false
+      "color": "62, 61, 52, 255"
     },
     {
       "name": "Sunplate",
-      "color": "213, 178, 28, 255",
-      "paintIgnore": false
+      "color": "213, 178, 28, 255"
     },
     {
       "name": "Crimstone",
-      "color": "128, 44, 45, 255",
-      "paintIgnore": false
+      "color": "128, 44, 45, 255"
     },
     {
       "name": "Crimtane",
-      "color": "125, 55, 65, 255",
-      "paintIgnore": false
+      "color": "125, 55, 65, 255"
     },
     {
       "name": "IceBrick",
-      "color": "124, 175, 201, 255",
-      "paintIgnore": false
+      "color": "124, 175, 201, 255"
     },
     {
       "name": "Shadewood",
-      "color": "88, 105, 118, 255",
-      "paintIgnore": false
+      "color": "88, 105, 118, 255"
     },
     {
       "name": "Chlorophyte",
-      "color": "191, 233, 115, 255",
-      "paintIgnore": false
+      "color": "191, 233, 115, 255"
     },
     {
       "name": "Rope",
-      "color": "137, 120, 67, 255",
-      "paintIgnore": false
+      "color": "137, 120, 67, 255"
     },
     {
       "name": "Chain",
-      "color": "103, 103, 103, 255",
-      "paintIgnore": false
+      "color": "103, 103, 103, 255"
     },
     {
       "name": "Palladium",
-      "color": "239, 90, 50, 255",
-      "paintIgnore": false
+      "color": "239, 90, 50, 255"
     },
     {
       "name": "Orichalcum",
-      "color": "231, 96, 228, 255",
-      "paintIgnore": false
+      "color": "231, 96, 228, 255"
     },
     {
       "name": "Titanium",
-      "color": "57, 85, 101, 255",
-      "paintIgnore": false
+      "color": "57, 85, 101, 255"
     },
     {
       "name": "Slush",
-      "color": "107, 132, 139, 255",
-      "paintIgnore": false
+      "color": "107, 132, 139, 255"
     },
     {
       "name": "Hive",
-      "color": "227, 125, 22, 255",
-      "paintIgnore": false
+      "color": "227, 125, 22, 255"
     },
     {
       "name": "LihzahrdBrick",
-      "color": "141, 56, 0, 255",
-      "paintIgnore": false
+      "color": "141, 56, 0, 255"
     },
     {
       "name": "HoneyBlock",
-      "color": "255, 156, 12, 255",
-      "paintIgnore": false
+      "color": "255, 156, 12, 255"
     },
     {
       "name": "CrispyHoneyBlock",
-      "color": "131, 79, 13, 255",
-      "paintIgnore": false
+      "color": "131, 79, 13, 255"
     },
     {
       "name": "WoodenSpikes",
-      "color": "145, 81, 85, 255",
-      "paintIgnore": false
+      "color": "145, 81, 85, 255"
     },
     {
       "name": "Crimsand",
-      "color": "53, 44, 41, 255",
-      "paintIgnore": false
+      "color": "53, 44, 41, 255"
     },
     {
       "name": "MetalBars",
-      "color": "224, 194, 101, 255",
-      "paintIgnore": false
+      "color": "224, 194, 101, 255"
     },
     {
       "name": "PalladiumColumn",
-      "color": "219, 71, 38, 255",
-      "paintIgnore": false
+      "color": "219, 71, 38, 255"
     },
     {
       "name": "BubblegumBlock",
-      "color": "235, 38, 231, 255",
-      "paintIgnore": false
+      "color": "235, 38, 231, 255"
     },
     {
       "name": "Titanstone",
-      "color": "86, 85, 92, 255",
-      "paintIgnore": false
+      "color": "86, 85, 92, 255"
     },
     {
       "name": "PumpkinBlock",
-      "color": "235, 150, 23, 255",
-      "paintIgnore": false
+      "color": "235, 150, 23, 255"
     },
     {
       "name": "HayBlock",
-      "color": "153, 131, 44, 255",
-      "paintIgnore": false
+      "color": "153, 131, 44, 255"
     },
     {
       "name": "SpookyWood",
-      "color": "57, 48, 97, 255",
-      "paintIgnore": false
+      "color": "57, 48, 97, 255"
     },
     {
       "name": "AmethystGemsparkOff",
-      "color": "107, 49, 154, 255",
-      "paintIgnore": false
+      "color": "107, 49, 154, 255"
     },
     {
       "name": "TopazGemsparkOff",
-      "color": "154, 148, 49, 255",
-      "paintIgnore": false
+      "color": "154, 148, 49, 255"
     },
     {
       "name": "SapphireGemsparkOff",
-      "color": "49, 49, 154, 255",
-      "paintIgnore": false
+      "color": "49, 49, 154, 255"
     },
     {
       "name": "EmeraldGemsparkOff",
-      "color": "49, 154, 68, 255",
-      "paintIgnore": false
+      "color": "49, 154, 68, 255"
     },
     {
       "name": "RubyGemsparkOff",
-      "color": "154, 49, 77, 255",
-      "paintIgnore": false
+      "color": "154, 49, 77, 255"
     },
     {
       "name": "DiamondGemsparkOff",
-      "color": "85, 89, 118, 255",
-      "paintIgnore": false
+      "color": "85, 89, 118, 255"
     },
     {
       "name": "AmberGemsparkOff",
-      "color": "154, 83, 49, 255",
-      "paintIgnore": false
+      "color": "154, 83, 49, 255"
     },
     {
       "name": "AmethystGemspark",
-      "color": "221, 79, 255, 255",
-      "paintIgnore": false
+      "color": "221, 79, 255, 255"
     },
     {
       "name": "TopazGemspark",
-      "color": "250, 255, 79, 255",
-      "paintIgnore": false
+      "color": "250, 255, 79, 255"
     },
     {
       "name": "SapphireGemspark",
-      "color": "79, 102, 255, 255",
-      "paintIgnore": false
+      "color": "79, 102, 255, 255"
     },
     {
       "name": "EmeraldGemspark",
-      "color": "79, 255, 89, 255",
-      "paintIgnore": false
+      "color": "79, 255, 89, 255"
     },
     {
       "name": "RubyGemspark",
-      "color": "255, 79, 79, 255",
-      "paintIgnore": false
+      "color": "255, 79, 79, 255"
     },
     {
       "name": "DiamondGemspark",
-      "color": "240, 240, 247, 255",
-      "paintIgnore": false
+      "color": "240, 240, 247, 255"
     },
     {
       "name": "AmberGemspark",
-      "color": "255, 145, 79, 255",
-      "paintIgnore": false
+      "color": "255, 145, 79, 255"
     },
     {
       "name": "Cog",
-      "color": "121, 119, 101, 255",
-      "paintIgnore": false
+      "color": "121, 119, 101, 255"
     },
     {
       "name": "StoneSlab",
-      "color": "128, 128, 128, 255",
-      "paintIgnore": false
+      "color": "128, 128, 128, 255"
     },
     {
       "name": "SandStoneSlab",
-      "color": "190, 171, 94, 255",
-      "paintIgnore": false
+      "color": "190, 171, 94, 255"
     },
     {
       "name": "CopperPlating",
-      "color": "150, 67, 22, 255",
-      "paintIgnore": false
+      "color": "150, 67, 22, 255"
     },
     {
       "name": "DynastyWood",
-      "color": "117, 61, 25, 255",
-      "paintIgnore": false
+      "color": "117, 61, 25, 255"
     },
     {
       "name": "RedDynastyShingles",
-      "color": "204, 93, 73, 255",
-      "paintIgnore": false
+      "color": "204, 93, 73, 255"
     },
     {
       "name": "BlueDynastyShingles",
-      "color": "87, 150, 154, 255",
-      "paintIgnore": false
+      "color": "87, 150, 154, 255"
     },
     {
       "name": "BorealWood",
-      "color": "96, 77, 64, 255",
-      "paintIgnore": false
+      "color": "96, 77, 64, 255"
     },
     {
       "name": "PalmWood",
-      "color": "198, 170, 104, 255",
-      "paintIgnore": false
+      "color": "198, 170, 104, 255"
     },
     {
       "name": "TinPlating",
-      "color": "129, 125, 93, 255",
-      "paintIgnore": false
+      "color": "129, 125, 93, 255"
     },
     {
       "name": "Waterfall",
-      "color": "9, 61, 191, 255",
-      "paintIgnore": false
+      "color": "9, 61, 191, 255"
     },
     {
       "name": "Lavafall",
-      "color": "253, 32, 3, 255",
-      "paintIgnore": false
+      "color": "253, 32, 3, 255"
     },
     {
       "name": "Confetti",
-      "color": "200, 246, 254, 255",
-      "paintIgnore": false
+      "color": "200, 246, 254, 255"
     },
     {
       "name": "ConfettiBlack",
-      "color": "15, 15, 15, 255",
-      "paintIgnore": false
+      "color": "15, 15, 15, 255"
     },
     {
       "name": "CopperCoinPile",
-      "color": "226, 118, 76, 255",
-      "paintIgnore": false
+      "color": "226, 118, 76, 255"
     },
     {
       "name": "SilverCoinPile",
-      "color": "161, 172, 173, 255",
-      "paintIgnore": false
+      "color": "161, 172, 173, 255"
     },
     {
       "name": "GoldCoinPile",
-      "color": "204, 181, 72, 255",
-      "paintIgnore": false
+      "color": "204, 181, 72, 255"
     },
     {
       "name": "PlatinumCoinPile",
-      "color": "190, 190, 178, 255",
-      "paintIgnore": false
+      "color": "190, 190, 178, 255"
     },
     {
       "name": "LivingFire",
-      "color": "253, 62, 3, 255",
-      "paintIgnore": false
+      "color": "253, 62, 3, 255"
     },
     {
       "name": "LivingCursedFire",
-      "color": "96, 248, 2, 255",
-      "paintIgnore": false
+      "color": "96, 248, 2, 255"
     },
     {
       "name": "LivingDemonFire",
-      "color": "105, 74, 202, 255",
-      "paintIgnore": false
+      "color": "105, 74, 202, 255"
     },
     {
       "name": "LivingFrostFire",
-      "color": "29, 240, 255, 255",
-      "paintIgnore": false
+      "color": "29, 240, 255, 255"
     },
     {
       "name": "LivingIchor",
-      "color": "254, 202, 80, 255",
-      "paintIgnore": false
+      "color": "254, 202, 80, 255"
     },
     {
       "name": "LivingUltrabrightFire",
-      "color": "131, 252, 245, 255",
-      "paintIgnore": false
+      "color": "131, 252, 245, 255"
     },
     {
       "name": "Honeyfall",
-      "color": "255, 156, 12, 255",
-      "paintIgnore": false
+      "color": "255, 156, 12, 255"
     },
     {
       "name": "ChlorophyteBrick",
-      "color": "149, 212, 89, 255",
-      "paintIgnore": false
+      "color": "149, 212, 89, 255"
     },
     {
       "name": "CrimtaneBrick",
-      "color": "236, 74, 79, 255",
-      "paintIgnore": false
+      "color": "236, 74, 79, 255"
     },
     {
       "name": "ShroomitePlating",
-      "color": "44, 26, 233, 255",
-      "paintIgnore": false
+      "color": "44, 26, 233, 255"
     },
     {
       "name": "MartianConduitPlating",
-      "color": "55, 97, 155, 255",
-      "paintIgnore": false
+      "color": "55, 97, 155, 255"
     },
     {
       "name": "ChimneySmoke",
-      "color": "31, 31, 31, 255",
-      "paintIgnore": false
+      "color": "31, 31, 31, 255"
     },
     {
       "name": "VineRope",
-      "color": "28, 216, 94, 255",
-      "paintIgnore": false
+      "color": "28, 216, 94, 255"
     },
     {
       "name": "MarbleBlock",
-      "color": "168, 178, 204, 255",
-      "paintIgnore": false
+      "color": "168, 178, 204, 255"
     },
     {
       "name": "SilkRope",
-      "color": "146, 136, 205, 255",
-      "paintIgnore": false
+      "color": "146, 136, 205, 255"
     },
     {
       "name": "WebRope",
-      "color": "223, 232, 233, 255",
-      "paintIgnore": false
+      "color": "223, 232, 233, 255"
     },
     {
       "name": "Marble",
-      "color": "168, 178, 204, 255",
-      "paintIgnore": false
+      "color": "168, 178, 204, 255"
     },
     {
       "name": "GraniteBlock",
-      "color": "50, 46, 104, 255",
-      "paintIgnore": false
+      "color": "50, 46, 104, 255"
     },
     {
       "name": "MeteoriteBrick",
-      "color": "127, 116, 194, 255",
-      "paintIgnore": false
+      "color": "127, 116, 194, 255"
     },
     {
       "name": "PinkSlimeBlock",
-      "color": "249, 101, 189, 255",
-      "paintIgnore": false
+      "color": "249, 101, 189, 255"
     },
     {
       "name": "Bubble",
-      "color": "251, 209, 240, 255",
-      "paintIgnore": false
+      "color": "251, 209, 240, 255"
     },
     {
       "name": "LivingMahogany",
-      "color": "221, 136, 144, 255",
-      "paintIgnore": false
+      "color": "221, 136, 144, 255"
     },
     {
       "name": "LivingMahoganyLeaves",
-      "color": "131, 206, 12, 255",
-      "paintIgnore": false
+      "color": "131, 206, 12, 255"
     },
     {
       "name": "CrystalBlock",
-      "color": "87, 21, 144, 255",
-      "paintIgnore": false
+      "color": "87, 21, 144, 255"
     },
     {
       "name": "Sandstone",
-      "color": "198, 124, 78, 255",
-      "paintIgnore": false
+      "color": "198, 124, 78, 255"
     },
     {
       "name": "HardenedSand",
-      "color": "212, 192, 100, 255",
-      "paintIgnore": false
+      "color": "212, 192, 100, 255"
     },
     {
       "name": "CorruptHardenedSand",
-      "color": "100, 82, 126, 255",
-      "paintIgnore": false
+      "color": "100, 82, 126, 255"
     },
     {
       "name": "CrimsonHardenedSand",
-      "color": "77, 76, 66, 255",
-      "paintIgnore": false
+      "color": "77, 76, 66, 255"
     },
     {
       "name": "CorruptSandstone",
-      "color": "96, 68, 117, 255",
-      "paintIgnore": false
+      "color": "96, 68, 117, 255"
     },
     {
       "name": "CrimsonSandstone",
-      "color": "68, 60, 51, 255",
-      "paintIgnore": false
+      "color": "68, 60, 51, 255"
     },
     {
       "name": "HallowHardenedSand",
-      "color": "174, 168, 186, 255",
-      "paintIgnore": false
+      "color": "174, 168, 186, 255"
     },
     {
       "name": "HallowSandstone",
-      "color": "205, 152, 186, 255",
-      "paintIgnore": false
+      "color": "205, 152, 186, 255"
     },
     {
       "name": "DesertFossil",
-      "color": "140, 84, 60, 255",
-      "paintIgnore": false
+      "color": "140, 84, 60, 255"
     },
     {
       "name": "FossilOre",
-      "color": "255, 227, 132, 255",
-      "paintIgnore": false
+      "color": "255, 227, 132, 255"
     },
     {
       "name": "LunarBrick",
-      "color": "85, 83, 82, 255",
-      "paintIgnore": false
+      "color": "85, 83, 82, 255"
     },
     {
       "name": "LunarBlockSolar",
-      "color": "249, 75, 7, 255",
-      "paintIgnore": false
+      "color": "249, 75, 7, 255"
     },
     {
       "name": "LunarBlockVortex",
-      "color": "0, 160, 170, 255",
-      "paintIgnore": false
+      "color": "0, 160, 170, 255"
     },
     {
       "name": "LunarBlockNebula",
-      "color": "160, 87, 234, 255",
-      "paintIgnore": false
+      "color": "160, 87, 234, 255"
     },
     {
       "name": "LunarBlockStardust",
-      "color": "22, 173, 254, 255",
-      "paintIgnore": false
+      "color": "22, 173, 254, 255"
     },
     {
       "name": "ConveyorBelt",
-      "color": "65, 75, 90, 255",
-      "paintIgnore": false
+      "color": "65, 75, 90, 255"
     },
     {
       "name": "TeamBlockRed",
-      "color": "168, 38, 47, 255",
-      "paintIgnore": false
+      "color": "168, 38, 47, 255"
     },
     {
       "name": "TeamBlockRedPlatform",
-      "color": "183, 53, 62, 255",
-      "paintIgnore": false
+      "color": "183, 53, 62, 255"
     },
     {
       "name": "TeamBlockGreen",
-      "color": "39, 168, 96, 255",
-      "paintIgnore": false
+      "color": "39, 168, 96, 255"
     },
     {
       "name": "TeamBlockBlue",
-      "color": "39, 94, 168, 255",
-      "paintIgnore": false
+      "color": "39, 94, 168, 255"
     },
     {
       "name": "TeamBlockYellow",
-      "color": "242, 221, 100, 255",
-      "paintIgnore": false
+      "color": "242, 221, 100, 255"
     },
     {
       "name": "TeamBlockPink",
-      "color": "224, 100, 242, 255",
-      "paintIgnore": false
+      "color": "224, 100, 242, 255"
     },
     {
       "name": "TeamBlockWhite",
-      "color": "197, 193, 216, 255",
-      "paintIgnore": false
+      "color": "197, 193, 216, 255"
     },
     {
       "name": "TeamBlockGreenPlatform",
-      "color": "54, 183, 111, 255",
-      "paintIgnore": false
+      "color": "54, 183, 111, 255"
     },
     {
       "name": "TeamBlockBluePlatform",
-      "color": "54, 109, 183, 255",
-      "paintIgnore": false
+      "color": "54, 109, 183, 255"
     },
     {
       "name": "TeamBlockYellowPlatform",
-      "color": "255, 236, 115, 255",
-      "paintIgnore": false
+      "color": "255, 236, 115, 255"
     },
     {
       "name": "TeamBlockPinkPlatform",
-      "color": "239, 115, 255, 255",
-      "paintIgnore": false
+      "color": "239, 115, 255, 255"
     },
     {
       "name": "TeamBlockWhitePlatform",
-      "color": "212, 208, 231, 255",
-      "paintIgnore": false
+      "color": "212, 208, 231, 255"
     },
     {
       "name": "SillyBalloonPink",
-      "color": "255, 66, 152, 255",
-      "paintIgnore": false
+      "color": "255, 66, 152, 255"
     },
     {
       "name": "SillyBalloonPurple",
-      "color": "179, 132, 255, 255",
-      "paintIgnore": false
+      "color": "179, 132, 255, 255"
     },
     {
       "name": "SillyBalloonGreen",
-      "color": "0, 206, 180, 255",
-      "paintIgnore": false
+      "color": "0, 206, 180, 255"
     },
     {
       "name": "SillyStreamerBlue",
-      "color": "91, 186, 240, 255",
-      "paintIgnore": false
+      "color": "91, 186, 240, 255"
     },
     {
       "name": "SillyStreamerGreen",
-      "color": "92, 240, 91, 255",
-      "paintIgnore": false
+      "color": "92, 240, 91, 255"
     },
     {
       "name": "SillyStreamerPink",
-      "color": "240, 91, 147, 255",
-      "paintIgnore": false
+      "color": "240, 91, 147, 255"
     },
     {
       "name": "SandFallBlock",
-      "color": "211, 198, 111, 255",
-      "paintIgnore": false
+      "color": "211, 198, 111, 255"
     },
     {
       "name": "SnowFallBlock",
-      "color": "190, 223, 232, 255",
-      "paintIgnore": false
+      "color": "190, 223, 232, 255"
     },
     {
       "name": "SnowCloud",
-      "color": "141, 163, 181, 255",
-      "paintIgnore": false
+      "color": "141, 163, 181, 255"
     }
   ],
   "Walls": [
     {
       "name": "Stone",
-      "color": "52, 52, 52, 255",
-      "paintIgnore": false
+      "color": "52, 52, 52, 255"
     },
     {
       "name": "Wood",
-      "color": "73, 51, 36, 255",
-      "paintIgnore": false
+      "color": "73, 51, 36, 255"
     },
     {
       "name": "GrayBrick",
-      "color": "52, 52, 52, 255",
-      "paintIgnore": false
+      "color": "52, 52, 52, 255"
     },
     {
       "name": "RedBrick",
-      "color": "91, 30, 30, 255",
-      "paintIgnore": false
+      "color": "91, 30, 30, 255"
     },
     {
       "name": "GoldBrick",
-      "color": "74, 62, 12, 255",
-      "paintIgnore": false
+      "color": "74, 62, 12, 255"
     },
     {
       "name": "SilverBrick",
-      "color": "46, 56, 59, 255",
-      "paintIgnore": false
+      "color": "46, 56, 59, 255"
     },
     {
       "name": "CopperBrick",
-      "color": "75, 32, 11, 255",
-      "paintIgnore": false
+      "color": "75, 32, 11, 255"
     },
     {
       "name": "Dirt",
-      "color": "88, 61, 46, 255",
-      "paintIgnore": false
+      "color": "88, 61, 46, 255"
     },
     {
       "name": "BlueDungeon",
-      "color": "27, 31, 42, 255",
-      "paintIgnore": false
+      "color": "27, 31, 42, 255"
     },
     {
       "name": "GreenDungeon",
-      "color": "31, 39, 26, 255",
-      "paintIgnore": false
+      "color": "31, 39, 26, 255"
     },
     {
       "name": "PinkDungeon",
-      "color": "41, 28, 36, 255",
-      "paintIgnore": false
+      "color": "41, 28, 36, 255"
     },
     {
       "name": "ObsidianBrick",
-      "color": "15, 15, 15, 255",
-      "paintIgnore": false
+      "color": "15, 15, 15, 255"
     },
     {
       "name": "PearlstoneBrick",
-      "color": "113, 99, 99, 255",
-      "paintIgnore": false
+      "color": "113, 99, 99, 255"
     },
     {
       "name": "IridescentBrick",
-      "color": "38, 38, 43, 255",
-      "paintIgnore": false
+      "color": "38, 38, 43, 255"
     },
     {
       "name": "MudstoneBrick",
-      "color": "53, 39, 41, 255",
-      "paintIgnore": false
+      "color": "53, 39, 41, 255"
     },
     {
       "name": "CobaltBrick",
-      "color": "11, 35, 62, 255",
-      "paintIgnore": false
+      "color": "11, 35, 62, 255"
     },
     {
       "name": "MythrilBrick",
-      "color": "21, 63, 70, 255",
-      "paintIgnore": false
+      "color": "21, 63, 70, 255"
     },
     {
       "name": "CandyCane",
-      "color": "88, 23, 23, 255",
-      "paintIgnore": false
+      "color": "88, 23, 23, 255"
     },
     {
       "name": "GreenCandyCane",
-      "color": "28, 88, 23, 255",
-      "paintIgnore": false
+      "color": "28, 88, 23, 255"
     },
     {
       "name": "SnowBrick",
-      "color": "78, 87, 99, 255",
-      "paintIgnore": false
+      "color": "78, 87, 99, 255"
     },
     {
       "name": "AdamantiteBeam",
-      "color": "86, 17, 40, 255",
-      "paintIgnore": false
+      "color": "86, 17, 40, 255"
     },
     {
       "name": "DemoniteBrick",
-      "color": "49, 47, 83, 255",
-      "paintIgnore": false
+      "color": "49, 47, 83, 255"
     },
     {
       "name": "SandstoneBrick",
-      "color": "69, 67, 41, 255",
-      "paintIgnore": false
+      "color": "69, 67, 41, 255"
     },
     {
       "name": "EbonstoneBrick",
-      "color": "51, 51, 70, 255",
-      "paintIgnore": false
+      "color": "51, 51, 70, 255"
     },
     {
       "name": "RedStucco",
-      "color": "87, 59, 55, 255",
-      "paintIgnore": false
+      "color": "87, 59, 55, 255"
     },
     {
       "name": "YellowStucco",
-      "color": "69, 67, 41, 255",
-      "paintIgnore": false
+      "color": "69, 67, 41, 255"
     },
     {
       "name": "GreenStucco",
-      "color": "49, 57, 49, 255",
-      "paintIgnore": false
+      "color": "49, 57, 49, 255"
     },
     {
       "name": "Gray",
-      "color": "78, 79, 73, 255",
-      "paintIgnore": false
+      "color": "78, 79, 73, 255"
     },
     {
       "name": "Ebonwood",
-      "color": "52, 50, 62, 255",
-      "paintIgnore": false
+      "color": "52, 50, 62, 255"
     },
     {
       "name": "RichMaogany",
-      "color": "71, 42, 44, 255",
-      "paintIgnore": false
+      "color": "71, 42, 44, 255"
     },
     {
       "name": "Pearlwood",
-      "color": "73, 66, 50, 255",
-      "paintIgnore": false
+      "color": "73, 66, 50, 255"
     },
     {
       "name": "RainbowBrick",
-      "color": "52, 52, 52, 255",
-      "paintIgnore": false
+      "color": "52, 52, 52, 255"
     },
     {
       "name": "TinBrick",
-      "color": "60, 59, 51, 255",
-      "paintIgnore": false
+      "color": "60, 59, 51, 255"
     },
     {
       "name": "TungstenBrick",
-      "color": "48, 57, 47, 255",
-      "paintIgnore": false
+      "color": "48, 57, 47, 255"
     },
     {
       "name": "PlatinumBrick",
-      "color": "71, 77, 85, 255",
-      "paintIgnore": false
+      "color": "71, 77, 85, 255"
     },
     {
       "name": "LivingLeaf",
-      "color": "1, 52, 20, 255",
-      "paintIgnore": false
+      "color": "1, 52, 20, 255"
     },
     {
       "name": "Grass",
-      "color": "30, 80, 48, 255",
-      "paintIgnore": false
+      "color": "30, 80, 48, 255"
     },
     {
       "name": "Jungle",
-      "color": "53, 80, 30, 255",
-      "paintIgnore": false
+      "color": "53, 80, 30, 255"
     },
     {
       "name": "Flower",
-      "color": "30, 80, 48, 255",
-      "paintIgnore": false
+      "color": "30, 80, 48, 255"
     },
     {
       "name": "Cactus",
-      "color": "52, 84, 12, 255",
-      "paintIgnore": false
+      "color": "52, 84, 12, 255"
     },
     {
       "name": "Cloud",
-      "color": "190, 204, 223, 255",
-      "paintIgnore": false
+      "color": "190, 204, 223, 255"
     },
     {
       "name": "Mushroom",
-      "color": "64, 62, 80, 255",
-      "paintIgnore": false
+      "color": "64, 62, 80, 255"
     },
     {
       "name": "Bone",
-      "color": "65, 65, 35, 255",
-      "paintIgnore": false
+      "color": "65, 65, 35, 255"
     },
     {
       "name": "Slime",
-      "color": "20, 46, 104, 255",
-      "paintIgnore": false
+      "color": "20, 46, 104, 255"
     },
     {
       "name": "Flesh",
-      "color": "61, 13, 16, 255",
-      "paintIgnore": false
+      "color": "61, 13, 16, 255"
     },
     {
       "name": "LivingWood",
-      "color": "63, 39, 26, 255",
-      "paintIgnore": false
+      "color": "63, 39, 26, 255"
     },
     {
       "name": "DiscWall",
-      "color": "77, 64, 34, 255",
-      "paintIgnore": false
+      "color": "77, 64, 34, 255"
     },
     {
       "name": "CrimstoneUnsafe",
-      "color": "62, 38, 41, 255",
-      "paintIgnore": false
+      "color": "62, 38, 41, 255"
     },
     {
       "name": "IceBrick",
-      "color": "48, 78, 93, 255",
-      "paintIgnore": false
+      "color": "48, 78, 93, 255"
     },
     {
       "name": "Shadewood",
-      "color": "54, 63, 69, 255",
-      "paintIgnore": false
+      "color": "54, 63, 69, 255"
     },
     {
       "name": "BlueDungeonTile",
-      "color": "44, 41, 50, 255",
-      "paintIgnore": false
+      "color": "44, 41, 50, 255"
     },
     {
       "name": "PinkDungeonTile",
-      "color": "78, 50, 69, 255",
-      "paintIgnore": false
+      "color": "78, 50, 69, 255"
     },
     {
       "name": "GreenDungeonTile",
-      "color": "38, 49, 50, 255",
-      "paintIgnore": false
+      "color": "38, 49, 50, 255"
     },
     {
       "name": "Hive",
-      "color": "138, 73, 38, 255",
-      "paintIgnore": false
+      "color": "138, 73, 38, 255"
     },
     {
       "name": "PalladiumColumn",
-      "color": "94, 25, 17, 255",
-      "paintIgnore": false
+      "color": "94, 25, 17, 255"
     },
     {
       "name": "BubblegumBlock",
-      "color": "125, 36, 122, 255",
-      "paintIgnore": false
+      "color": "125, 36, 122, 255"
     },
     {
       "name": "TitanstoneBlock",
-      "color": "51, 35, 27, 255",
-      "paintIgnore": false
+      "color": "51, 35, 27, 255"
     },
     {
       "name": "LihzahrdBrick",
-      "color": "50, 15, 8, 255",
-      "paintIgnore": false
+      "color": "50, 15, 8, 255"
     },
     {
       "name": "Pumpkin",
-      "color": "135, 58, 0, 255",
-      "paintIgnore": false
+      "color": "135, 58, 0, 255"
     },
     {
       "name": "Hay",
-      "color": "65, 52, 15, 255",
-      "paintIgnore": false
+      "color": "65, 52, 15, 255"
     },
     {
       "name": "SpookyWood",
-      "color": "39, 42, 51, 255",
-      "paintIgnore": false
+      "color": "39, 42, 51, 255"
     },
     {
       "name": "ChristmasTreeWallpaper",
-      "color": "89, 26, 27, 255",
-      "paintIgnore": false
+      "color": "89, 26, 27, 255"
     },
     {
       "name": "OrnamentWallpaper",
-      "color": "126, 123, 115, 255",
-      "paintIgnore": false
+      "color": "126, 123, 115, 255"
     },
     {
       "name": "CandyCaneWallpaper",
-      "color": "8, 50, 19, 255",
-      "paintIgnore": false
+      "color": "8, 50, 19, 255"
     },
     {
       "name": "FestiveWallpaper",
-      "color": "95, 21, 24, 255",
-      "paintIgnore": false
+      "color": "95, 21, 24, 255"
     },
     {
       "name": "StarsWallpaper",
-      "color": "17, 31, 65, 255",
-      "paintIgnore": false
+      "color": "17, 31, 65, 255"
     },
     {
       "name": "SquigglesWallpaper",
-      "color": "192, 173, 143, 255",
-      "paintIgnore": false
+      "color": "192, 173, 143, 255"
     },
     {
       "name": "SnowflakeWallpaper",
-      "color": "114, 114, 131, 255",
-      "paintIgnore": false
+      "color": "114, 114, 131, 255"
     },
     {
       "name": "KrampusHornWallpaper",
-      "color": "136, 119, 7, 255",
-      "paintIgnore": false
+      "color": "136, 119, 7, 255"
     },
     {
       "name": "BluegreenWallpaper",
-      "color": "8, 72, 3, 255",
-      "paintIgnore": false
+      "color": "8, 72, 3, 255"
     },
     {
       "name": "GrinchFingerWallpaper",
-      "color": "117, 132, 82, 255",
-      "paintIgnore": false
+      "color": "117, 132, 82, 255"
     },
     {
       "name": "FancyGrayWallpaper",
-      "color": "100, 102, 114, 255",
-      "paintIgnore": false
+      "color": "100, 102, 114, 255"
     },
     {
       "name": "IceFloeWallpaper",
-      "color": "30, 118, 226, 255",
-      "paintIgnore": false
+      "color": "30, 118, 226, 255"
     },
     {
       "name": "MusicWallpaper",
-      "color": "93, 6, 102, 255",
-      "paintIgnore": false
+      "color": "93, 6, 102, 255"
     },
     {
       "name": "PurpleRainWallpaper",
-      "color": "64, 40, 169, 255",
-      "paintIgnore": false
+      "color": "64, 40, 169, 255"
     },
     {
       "name": "RainbowWallpaper",
-      "color": "39, 34, 180, 255",
-      "paintIgnore": false
+      "color": "39, 34, 180, 255"
     },
     {
       "name": "SparkleStoneWallpaper",
-      "color": "87, 94, 125, 255",
-      "paintIgnore": false
+      "color": "87, 94, 125, 255"
     },
     {
       "name": "StarlitHeavenWallpaper",
-      "color": "6, 6, 6, 255",
-      "paintIgnore": false
+      "color": "6, 6, 6, 255"
     },
     {
       "name": "BubbleWallpaper",
-      "color": "69, 72, 186, 255",
-      "paintIgnore": false
+      "color": "69, 72, 186, 255"
     },
     {
       "name": "CopperPipeWallpaper",
-      "color": "130, 62, 16, 255",
-      "paintIgnore": false
+      "color": "130, 62, 16, 255"
     },
     {
       "name": "DuckyWallpaper",
-      "color": "22, 123, 163, 255",
-      "paintIgnore": false
+      "color": "22, 123, 163, 255"
     },
     {
       "name": "Waterfall",
-      "color": "40, 86, 151, 255",
-      "paintIgnore": false
+      "color": "40, 86, 151, 255"
     },
     {
       "name": "Lavafall",
-      "color": "183, 75, 15, 255",
-      "paintIgnore": false
+      "color": "183, 75, 15, 255"
     },
     {
       "name": "EbonwoodFence",
-      "color": "83, 80, 100, 255",
-      "paintIgnore": false
+      "color": "83, 80, 100, 255"
     },
     {
       "name": "RichMahoganyFence",
-      "color": "115, 65, 68, 255",
-      "paintIgnore": false
+      "color": "115, 65, 68, 255"
     },
     {
       "name": "PearlwoodFence",
-      "color": "119, 108, 81, 255",
-      "paintIgnore": false
+      "color": "119, 108, 81, 255"
     },
     {
       "name": "ShadewoodFence",
-      "color": "59, 67, 71, 255",
-      "paintIgnore": false
+      "color": "59, 67, 71, 255"
     },
     {
       "name": "WhiteDynasty",
-      "color": "17, 172, 143, 255",
-      "paintIgnore": false
+      "color": "17, 172, 143, 255"
     },
     {
       "name": "BlueDynasty",
-      "color": "90, 112, 105, 255",
-      "paintIgnore": false
+      "color": "90, 112, 105, 255"
     },
     {
       "name": "ArcaneRunes",
-      "color": "62, 28, 87, 255",
-      "paintIgnore": false
+      "color": "62, 28, 87, 255"
     },
     {
       "name": "CopperPlating",
-      "color": "120, 59, 19, 255",
-      "paintIgnore": false
+      "color": "120, 59, 19, 255"
     },
     {
       "name": "StoneSlab",
-      "color": "59, 59, 59, 255",
-      "paintIgnore": false
+      "color": "59, 59, 59, 255"
     },
     {
       "name": "Sail",
-      "color": "229, 218, 161, 255",
-      "paintIgnore": false
+      "color": "229, 218, 161, 255"
     },
     {
       "name": "BorealWood",
-      "color": "73, 59, 50, 255",
-      "paintIgnore": false
+      "color": "73, 59, 50, 255"
     },
     {
       "name": "PalmWood",
-      "color": "102, 75, 34, 255",
-      "paintIgnore": false
+      "color": "102, 75, 34, 255"
     },
     {
       "name": "AmberGemspark",
-      "color": "255, 145, 79, 255",
-      "paintIgnore": false
+      "color": "255, 145, 79, 255"
     },
     {
       "name": "AmethystGemspark",
-      "color": "221, 79, 255, 255",
-      "paintIgnore": false
+      "color": "221, 79, 255, 255"
     },
     {
       "name": "DiamondGemspark",
-      "color": "240, 240, 247, 255",
-      "paintIgnore": false
+      "color": "240, 240, 247, 255"
     },
     {
       "name": "EmeraldGemspark",
-      "color": "79, 255, 89, 255",
-      "paintIgnore": false
+      "color": "79, 255, 89, 255"
     },
     {
       "name": "AmberGemsparkOff",
-      "color": "154, 83, 49, 255",
-      "paintIgnore": false
+      "color": "154, 83, 49, 255"
     },
     {
       "name": "AmethystGemsparkOff",
-      "color": "107, 49, 154, 255",
-      "paintIgnore": false
+      "color": "107, 49, 154, 255"
     },
     {
       "name": "DiamondGemsparkOff",
-      "color": "85, 89, 118, 255",
-      "paintIgnore": false
+      "color": "85, 89, 118, 255"
     },
     {
       "name": "EmeraldGemsparkOff",
-      "color": "49, 154, 68, 255",
-      "paintIgnore": false
+      "color": "49, 154, 68, 255"
     },
     {
       "name": "RubyGemsparkOff",
-      "color": "154, 49, 77, 255",
-      "paintIgnore": false
+      "color": "154, 49, 77, 255"
     },
     {
       "name": "SapphireGemsparkOff",
-      "color": "49, 49, 154, 255",
-      "paintIgnore": false
+      "color": "49, 49, 154, 255"
     },
     {
       "name": "TopazGemsparkOff",
-      "color": "154, 148, 49, 255",
-      "paintIgnore": false
+      "color": "154, 148, 49, 255"
     },
     {
       "name": "RubyGemspark",
-      "color": "255, 79, 79, 255",
-      "paintIgnore": false
+      "color": "255, 79, 79, 255"
     },
     {
       "name": "SapphireGemspark",
-      "color": "79, 102, 255, 255",
-      "paintIgnore": false
+      "color": "79, 102, 255, 255"
     },
     {
       "name": "TopazGemspark",
-      "color": "250, 255, 79, 255",
-      "paintIgnore": false
+      "color": "250, 255, 79, 255"
     },
     {
       "name": "TinPlating",
-      "color": "70, 68, 51, 255",
-      "paintIgnore": false
+      "color": "70, 68, 51, 255"
     },
     {
       "name": "ConfettiBlack",
-      "color": "5, 5, 5, 255",
-      "paintIgnore": false
+      "color": "5, 5, 5, 255"
     },
     {
       "name": "Honeyfall",
-      "color": "163, 96, 0, 255",
-      "paintIgnore": false
+      "color": "163, 96, 0, 255"
     },
     {
       "name": "ChlorophyteBrick",
-      "color": "94, 163, 46, 255",
-      "paintIgnore": false
+      "color": "94, 163, 46, 255"
     },
     {
       "name": "CrimtaneBrick",
-      "color": "117, 32, 59, 255",
-      "paintIgnore": false
+      "color": "117, 32, 59, 255"
     },
     {
       "name": "ShroomitePlating",
-      "color": "20, 11, 203, 255",
-      "paintIgnore": false
+      "color": "20, 11, 203, 255"
     },
     {
       "name": "MartianConduit",
-      "color": "74, 69, 88, 255",
-      "paintIgnore": false
+      "color": "74, 69, 88, 255"
     },
     {
       "name": "HellstoneBrick",
-      "color": "60, 30, 30, 255",
-      "paintIgnore": false
+      "color": "60, 30, 30, 255"
     },
     {
       "name": "MarbleBlock",
-      "color": "111, 117, 135, 255",
-      "paintIgnore": false
+      "color": "111, 117, 135, 255"
     },
     {
       "name": "GraniteBlock",
-      "color": "25, 23, 54, 255",
-      "paintIgnore": false
+      "color": "25, 23, 54, 255"
     },
     {
       "name": "MeteoriteBrick",
-      "color": "74, 71, 129, 255",
-      "paintIgnore": false
+      "color": "74, 71, 129, 255"
     },
     {
       "name": "Crystal",
-      "color": "38, 9, 66, 255",
-      "paintIgnore": false
+      "color": "38, 9, 66, 255"
     },
     {
       "name": "Sandstone",
-      "color": "149, 80, 51, 255",
-      "paintIgnore": false
+      "color": "149, 80, 51, 255"
     },
     {
       "name": "DesertFossil",
-      "color": "51, 18, 4, 255",
-      "paintIgnore": false
+      "color": "51, 18, 4, 255"
     },
     {
       "name": "LunarBrickWall",
-      "color": "57, 55, 52, 255",
-      "paintIgnore": false
+      "color": "57, 55, 52, 255"
     },
     {
       "name": "CogWall",
-      "color": "68, 68, 68, 255",
-      "paintIgnore": false
+      "color": "68, 68, 68, 255"
     },
     {
       "name": "SandFall",
-      "color": "148, 138, 74, 255",
-      "paintIgnore": false
+      "color": "148, 138, 74, 255"
     },
     {
       "name": "SnowFall",
-      "color": "95, 137, 191, 255",
-      "paintIgnore": false
+      "color": "95, 137, 191, 255"
     },
     {
       "name": "SillyBalloonPinkWall",
-      "color": "160, 2, 75, 255",
-      "paintIgnore": false
+      "color": "160, 2, 75, 255"
     },
     {
       "name": "SillyBalloonPurpleWall",
-      "color": "100, 55, 164, 255",
-      "paintIgnore": false
+      "color": "100, 55, 164, 255"
     },
     {
       "name": "SillyBalloonGreenWall",
-      "color": "0, 117, 101, 255",
-      "paintIgnore": false
+      "color": "0, 117, 101, 255"
     }
   ],
   "Paints": [
