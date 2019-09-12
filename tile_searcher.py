@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import json
+import os
 from tkinter import *
+import color_helper
 
 
 # ペイント後の色計算式、テラリアより抜粋し,python用に調整したもの
@@ -47,7 +49,7 @@ def painted_color(base_color, paint_color, wall):
  # 差分のスコアが小さいタイル5件を作成
 def return_min_scores(r, g, b, target_color_list):
     input_color = [r, g, b]
-    scores = [((abs(color[0] - input_color[0]) + abs(color[1] - input_color[1]) + abs(color[2] - input_color[2])), i) for i,
+    scores = [(available_matrices[config['matrix']](input_color, color), i) for i,
               color in enumerate(target_color_list)]
     min_scores_index = sorted(scores)[:5]
     return min_scores_index
@@ -191,6 +193,10 @@ class RgbInputFrame():
         self.send_color()
 
 
+# コンフィグの読み込みに失敗した時に投げられる
+class BadConfigException(BaseException):
+    'Raises when config load fails'
+
 #検索に使用するリスト
 data = json.load(open('MapColor.json'))
 paint_dictionary = data['Paints']
@@ -203,6 +209,24 @@ painted_colors = [painted_color(base_colors[i], paint_colors[j], i >= wall_start
                     for j in range(len(paint_colors))
                     for i in range(len(base_colors))]
 map_colors = base_colors + painted_colors
+
+# 計算関数名と関数のペア
+available_matrices = {'absolute': lambda rgb1, rgb2: abs(rgb2[0] - rgb1[0]) + abs(rgb2[1] - rgb1[1]) + abs(rgb2[2] - rgb1[2]),
+                      'euclid': color_helper.euclidean_distance,
+                      'cie-lab': color_helper.lab_difference}
+
+# コンフィグの読み込み
+config_file_name = 'config.json'
+if os.path.exists(config_file_name):
+  with open(config_file_name) as f:
+    config = json.load(f)
+    if not config['matrix'] in available_matrices:
+      raise BadConfigException('The matrix `{}` is not available. Please specify from [{}]'.format(config['matrix'], ', '.join(available_matrices.keys())))
+else:
+  # デフォルトを設定してコンフィグを作成
+  config = {'matrix': 'absolute'}
+  with open(config_file_name, 'w') as f:
+    json.dump(config, f, indent=4, sort_keys=True)
 
 if __name__ == '__main__':
     root = Tk()
