@@ -68,12 +68,13 @@ def select_tile_combination(r, g, b, target_color_list):
 
         target_index = i[1] % paint_start
         target_item = base_dictionary[target_index]['name']
+        target_item_rgb = map_colors[i[1]][:3]
         if target_index >= wall_start:
             tile_type = 'wall'
         else:
             tile_type = 'tile'
 
-        names += '({}){}{}\n\n'.format(tile_type, target_item, paint_name)
+        names += '({}) {}{} {}\n\n'.format(tile_type, target_item, paint_name, target_item_rgb)
     return names
 
 class RgbInputFrame():
@@ -224,7 +225,7 @@ if os.path.exists(config_file_name):
       raise BadConfigException('The matrix `{}` is not available. Please specify from [{}]'.format(config['matrix'], ', '.join(available_matrices.keys())))
 else:
   # デフォルトを設定してコンフィグを作成
-  config = {'matrix': 'absolute'}
+  config = {'matrix': 'cie-lab'}
   with open(config_file_name, 'w') as f:
     json.dump(config, f, indent=4, sort_keys=True)
 
